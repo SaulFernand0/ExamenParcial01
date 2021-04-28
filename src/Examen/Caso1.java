@@ -34,11 +34,11 @@ public class Caso1 implements Runnable{
                                     entrada.liberarPuerta();
                                     
                                     if (almacen.cogerProducto()){
-                                            System.out.println(this.nombre + ": cogí un producto");
+                                            System.out.println(this.nombre + ": cogío un producto y se marchó");
                                             return ;
                                     }
                                     else {
-                                            System.out.println(this.nombre+ ": crucé pero no cogí nada");
+                                            System.out.println(this.nombre+ ": ...");
                                             return ;
                                     } 
                             } 
@@ -46,7 +46,7 @@ public class Caso1 implements Runnable{
                        espera();
                     }
             } 
-            System.out.println(this.nombre+ ": no pude coger un producto");
+            System.out.println(this.nombre+ ": no pudo coger un producto y se marchó");
     }
     
     
